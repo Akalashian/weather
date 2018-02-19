@@ -51,7 +51,8 @@ for(let i=0; i<6; i++){
   htmlupdate +="<div class = 'col-4'>";
   htmlupdate += '<h3 class="icon">' + icon(response.daily.data[i]) + '</h3>';
   htmlupdate += '<h4 class ="temperatureHigh">' + Math.round(response.daily.data[i].temperatureHigh) + "|" + Math.round(response.daily.data[i].temperatureLow) +'</h4>';
-  htmlupdate += '<h5 class ="sumamry">' + response.daily.data[i].summary + '</h5>';
+  htmlupdate+= '<h5 class = "precipType">' + "Precipitation " +"Type:" + response.daily.data[i].precipType +'</h5>'
+  htmlupdate += '<h6 class ="sumamry">' +  response.daily.data[i].summary + '</h6>';
   htmlupdate += '</div>'
 };
 $(".forecast").append(htmlupdate);

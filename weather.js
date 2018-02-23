@@ -58,6 +58,30 @@ for(let i=0; i<6; i++){
 $(".forecast").append(htmlupdate);
 $(".forecast").fadeIn();
 }
+
+
+// ANSWER KEY
+// $(".forecast").empty(); This empties everything out - below changes our html manipulation and then appends to show it all
+// $(#"current-conditions-text").html(response.currently.summary);//This is saying put this in the html code under current conditions text on index.html tab
+// $(#"current-conditions-icon").html(icon(response.currently.icon));
+// for(let i=0, i<6, i++){
+// let html = <div class="col">;
+// html+=  <h3>+ icon (response.dailly.data[i].icon)+ </h3>;
+//  html += <h4> + Math.round(response.daily.data[i].temperatureHigh) + "|" + Math.round(response.daily.data[i].temperatureLow) +</h4>;
+//  html+=  <h5> + response.daily.data [i].summary + //h5>;
+// html=+ </div>;
+// $(".forecast").append(html) - this inserts this JS we just wrote into the html code
+// }
+
+
+// $.("current").fadeIn();
+// $(."forecast").fadeIn();
+//
+
+
+
+
+
     // *** your code ends here -- really.
 
 // leave this alone; does the event handling and ajax
